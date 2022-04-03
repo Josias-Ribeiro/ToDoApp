@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoAppComponent } from './todo-app/todo-app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { TodoAppComponent } from './todo-app/todo-app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
