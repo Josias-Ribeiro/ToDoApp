@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatInputModule } from '@angular/material/input';
 import { MaterialModule } from '../core/material.module';
 import { TodoAppComponent } from './todo-app.component';
-import { TodoInputComponent } from './todo-input/todo-input.component';
 import { TodoInputModule } from './todo-input/todo-input.module';
 
 
@@ -11,14 +11,12 @@ import { TodoInputModule } from './todo-input/todo-input.module';
 
 
 @NgModule({
-  declarations: [TodoAppComponent, TodoInputComponent],
+  declarations: [TodoAppComponent],
   imports: [        
-    CommonModule,
+    CommonModule,    
+    MaterialModule, 
+    TodoInputModule,
     FlexLayoutModule,
-    MaterialModule,
-
-    TodoInputModule
-  
   ], 
   exports:  [TodoAppComponent],
 })

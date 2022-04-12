@@ -1,25 +1,21 @@
 ::ng-deep body {
     background-image: url('../../../assets/bg-desktop-dark.jpg');
     background-repeat: no-repeat;
-    background-color: rgb(68, 68, 202);
+    background-color: hsl(235, 21%, 11%)
 }
 
 .container {
-    border: 1px solid black;
-    margin: auto;    
-    max-width: 50vw;
-    margin-top: 30vh;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
 }
 
-.cabecalho{
-    justify-content: space-between;
-    display: flex;
+.container-to-do{
+   max-height: 70vh !important;
+   min-width: 30vw;
 }
 
-.titulo-todo {
-    color: white;
+.title {
     font-size: 2rem;
+    color: white;
     font-weight: 600;
+    letter-spacing: 2px;
 }
