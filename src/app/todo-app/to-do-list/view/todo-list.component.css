@@ -13,6 +13,10 @@
   overflow-y: auto;
 }
 
+.item-tarefa {
+    color: white;
+}
+
 .button-remove{
     background-color: transparent;
     border: none;
