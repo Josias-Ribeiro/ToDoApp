@@ -6,6 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class TodoAppComponent implements OnInit {
   listaTarefas = [];
+  
 
   constructor() { }
 

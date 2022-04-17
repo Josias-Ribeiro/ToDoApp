@@ -5,6 +5,6 @@
     </mat-list-option>
   </mat-selection-list>
   
-  <p *ngIf="tarefa.selectedOptions.selected[0]?.value">
-    Tarefa selecionada: {{tarefa.selectedOptions.selected[0]?.value}}
+  <p class="tarefas-concluidas" *ngIf="tarefa.selectedOptions.selected[0]?.value">
+    Tarefas concluídas: {{tarefa.selectedOptions.selected.length}}
   </p>

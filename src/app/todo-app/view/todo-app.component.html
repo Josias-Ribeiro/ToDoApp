@@ -14,7 +14,7 @@
     
       <todo-input (addTarefa)="adicionarTarefa($event)"></todo-input> 
 
-      <todo-list [listaTarefas]="listaTarefas"></todo-list>
+      <todo-list *ngIf="listaTarefas.length" [listaTarefas]="listaTarefas"></todo-list>
 
   </div>
   
