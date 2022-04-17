@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({  
   templateUrl: './view/todo-app.component.html',
   styleUrls: ['./view/todo-app.component.css']
 })
 export class TodoAppComponent implements OnInit {
-  tarefa: string;
-
+  listaTarefas = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  adicionarTarefa(value){
-    console.log(value)
+  adicionarTarefa(tarefa: string){
+    this.listaTarefas.push(tarefa)
   }
 
 }

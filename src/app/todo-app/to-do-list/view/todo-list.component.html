@@ -1,0 +1,10 @@
+  <mat-selection-list #tarefa [multiple]="true" style="background-color: #45486e;">
+    <mat-list-option *ngFor="let tarefa of listaTarefas" [value]="tarefa">
+      {{tarefa}}
+      <mat-divider></mat-divider>
+    </mat-list-option>
+  </mat-selection-list>
+  
+  <p *ngIf="tarefa.selectedOptions.selected[0]?.value">
+    Tarefa selecionada: {{tarefa.selectedOptions.selected[0]?.value}}
+  </p>
