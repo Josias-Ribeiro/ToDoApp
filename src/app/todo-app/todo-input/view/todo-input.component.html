@@ -1,12 +1,10 @@
-<div class="container-input">
-  <div>
-    <input type="checkbox" class="to-do-checkbox"/>
-  </div>
+<form [formGroup]="formService.form">
+  <mat-form-field appearance="outline" fxFlex="100" style="margin-top: 2rem;">     
+    <input  autocomplete="off" matInput formControlName="tarefa" placeholder="Digite a tarefa">
+    <button matSuffix mat-icon-button aria-label="Adicionar" (click)="add()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-form-field>  
 
-  <input
-    type="text"
-    fxFlex="100"
-    class="to-do-input"
-    placeholder="Escreva aqui sua tarefa"
-  />
-</div>
+  
+</form>

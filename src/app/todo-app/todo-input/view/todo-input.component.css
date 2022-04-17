@@ -1,18 +1,12 @@
-.container-input{
-    margin-top: 2rem;
-}
-
-.to-do-checkbox{
-    border-radius: 50%;
-    height: 3rem;
-    background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
-}
-
-.to-do-input {
-    height: 50px;
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
     background-color: hsl(235, 24%, 19%);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 5px
+    border-radius: 5px;        
+  }
+
+input {
+    color: white;    
+}
+
+.button-input {
+    font-size: 1.5rem;
 }

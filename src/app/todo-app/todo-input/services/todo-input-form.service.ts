@@ -4,7 +4,7 @@ import { Form, FormBuilder, FormGroup } from '@angular/forms';
 @Injectable()
 export class TodoInputFormService {   
     
-    form! : FormGroup
+    form!:FormGroup;
 
     constructor(private _fb: FormBuilder) { }    
 
