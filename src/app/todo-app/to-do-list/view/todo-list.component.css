@@ -1,16 +1,32 @@
 .to-do-input {
-    height: 50px;
-    background-color: hsl(235, 24%, 19%);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 10px
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
 }
 
-.tarefas-concluidas {
-    margin-top: 1rem;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.25rem;
+.selection-list {
+  background-color: #45486e;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.button-remove{
+    background-color: transparent;
+    border: none;
+    float: right;
+    color: rgb(71, 40, 40);
+}
+
+.rodape-tarefas {
+  margin-top: 1rem;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.mat-pseudo-checkbox{ 
+    margin-bottom: 2px;
 }

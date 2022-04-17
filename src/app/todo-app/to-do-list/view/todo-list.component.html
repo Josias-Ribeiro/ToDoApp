@@ -1,10 +1,30 @@
-  <mat-selection-list #tarefa [multiple]="true" style="background-color: #45486e;">
-    <mat-list-option *ngFor="let tarefa of listaTarefas" [value]="tarefa">
-      {{tarefa}}
-      <mat-divider></mat-divider>
-    </mat-list-option>
-  </mat-selection-list>
   
-  <p class="tarefas-concluidas" *ngIf="tarefa.selectedOptions.selected[0]?.value">
-    Tarefas concluídas: {{tarefa.selectedOptions.selected.length}}
-  </p>
+    <mat-selection-list #tarefa [multiple]="true" class="selection-list">
+      <mat-list-option *ngFor="let tarefa of listaTarefas; let i = index" [value]="tarefa" aria-checked="false">
+        <div class="item-tarefa">          
+          <span> {{tarefa}}</span>
+          <button class="button-remove" mat-icon-button aria-label="Deletar" (click)="deletar(i)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          
+        </div>
+        
+        <mat-divider></mat-divider>
+      </mat-list-option>
+    </mat-selection-list>
+    
+  
+    <div fxLayoutGap="12px">
+      <span class="rodape-tarefas" fxFlex="50">
+        Tarefas remanescentes : {{listaTarefas.length -  tarefa.selectedOptions.selected.length}}
+      </span>
+      <span fxFlex="50" class="rodape-tarefas" style="cursor: pointer" (click)="limparListaTarefas()"> Limpar todas as tarefas</span>
+      
+  
+  
+    </div>
+  
+  
+  
+  
+  

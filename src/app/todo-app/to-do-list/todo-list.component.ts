@@ -7,10 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class TodoListComponent implements OnInit {    
-    @Input() listaTarefas;
+    @Input() listaTarefas: string[];
 
     constructor() { }
 
-    ngOnInit() { }    
+    ngOnInit() { }     
+   
+    deletar(index: number){
+        this.listaTarefas.splice(index, 1)
+    }
+
+    limparListaTarefas(){
+        this.listaTarefas.splice(0, this.listaTarefas.length)
+    }
     
 }
